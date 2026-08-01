@@ -1,0 +1,371 @@
+/* =====================================
+   Google Font & Reset
+===================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+/* =====================================
+   Header
+===================================== */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0f172a;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* =====================================
+   Hero
+===================================== */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8% 60px;
+    background:linear-gradient(135deg,#2563eb,#0ea5e9);
+    color:white;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h3{
+    font-size:28px;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    color:#ffe082;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    max-width:500px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn,
+.btn2{
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn{
+    background:white;
+    color:#2563eb;
+}
+
+.btn2{
+    border:2px solid white;
+    color:white;
+}
+
+.btn:hover,
+.btn2:hover{
+    transform:translateY(-3px);
+}
+
+/* =====================================
+   Hero Image
+===================================== */
+.hero-image{
+    flex:1;
+    text-align:center;
+    min-width:300px;
+}
+
+.hero-image img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid rgba(255,255,255,.3);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+/* =====================================
+   Sections
+===================================== */
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:36px;
+    color:#2563eb;
+    margin-bottom:50px;
+}
+
+/* =====================================
+   Cards
+===================================== */
+.about-card,
+.edu-box,
+.card,
+.contact-box{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.about-card:hover,
+.edu-box:hover,
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* =====================================
+   Education
+===================================== */
+.timeline{
+    display:flex;
+    justify-content:center;
+}
+
+.edu-box{
+    max-width:500px;
+    text-align:center;
+}
+
+.edu-box h3{
+    color:#2563eb;
+}
+
+/* =====================================
+   Skills
+===================================== */
+.skill-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.skill h4{
+    margin-bottom:8px;
+}
+
+.bar{
+    width:100%;
+    height:12px;
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.bar div{
+    height:100%;
+    background:linear-gradient(to right,#2563eb,#38bdf8);
+}
+
+.python{width:80%;}
+.java{width:70%;}
+.html{width:90%;}
+.css{width:85%;}
+.js{width:75%;}
+.cloud{width:70%;}
+
+/* =====================================
+   Certificates
+===================================== */
+.certificate-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    text-align:center;
+}
+
+.card i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* =====================================
+   Contact
+===================================== */
+.contact-box{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-box div{
+    margin:18px 0;
+    font-size:18px;
+}
+
+.contact-box i{
+    color:#2563eb;
+    margin-right:10px;
+}
+
+/* =====================================
+   Footer
+===================================== */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* =====================================
+   Back To Top Button
+===================================== */
+#topBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    display:none;
+    font-size:18px;
+}
+
+/* =====================================
+   Responsive
+===================================== */
+@media(max-width:768px){
+
+header{
+    padding:15px 5%;
+}
+
+nav{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-image{
+    margin-top:40px;
+}
+
+.hero-image img{
+    width:250px;
+    height:250px;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.title{
+    font-size:30px;
+}
+}
+/* Active Navigation */
+nav ul li a.active{
+    color:#38bdf8;
+    font-weight:600;
+}
+
+/* Floating Animation */
+.floating{
+    animation:float 2s ease-in-out;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
